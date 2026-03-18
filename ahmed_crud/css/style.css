@@ -1,0 +1,177 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+.container{
+    display:flex;
+}
+
+/* Sidebar */
+.sidebar{
+    width:260px;
+    height:100vh;
+    background:rgba(255,255,255,0.05);
+    backdrop-filter:blur(15px);
+    padding:30px 20px;
+    border-right:1px solid rgba(255,255,255,0.1);
+}
+
+.logo{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:40px;
+    text-align:center;
+    letter-spacing:2px;
+}
+
+.sidebar ul{
+    list-style:none;
+}
+
+.sidebar ul li{
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.sidebar ul li:hover,
+.sidebar ul li.active{
+    background:rgba(255,255,255,0.15);
+}
+
+/* Main */
+.main{
+    flex:1;
+    padding:30px;
+}
+
+/* Topbar */
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+}
+
+.search input{
+    padding:10px 15px;
+    border:none;
+    border-radius:30px;
+    outline:none;
+    width:250px;
+}
+
+.profile{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.avatar{
+    width:40px;
+    height:40px;
+    background:linear-gradient(45deg,#00c6ff,#0072ff);
+    border-radius:50%;
+}
+
+/* Cards */
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    padding:25px;
+    border-radius:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    background:rgba(255,255,255,0.15);
+}
+
+.card h3{
+    font-size:14px;
+    font-weight:400;
+    margin-bottom:10px;
+    color:#ccc;
+}
+
+.card p{
+    font-size:26px;
+    font-weight:600;
+}
+
+/* Table */
+.table-box{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
+    padding:25px;
+    border-radius:15px;
+}
+
+.table-box h2{
+    margin-bottom:20px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+table th, table td{
+    padding:15px;
+    text-align:left;
+}
+
+table th{
+    color:#bbb;
+    font-weight:500;
+}
+
+table tr{
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.status{
+    padding:5px 12px;
+    border-radius:20px;
+    font-size:12px;
+    font-weight:500;
+}
+
+.active{
+    background:#00c851;
+}
+
+.pending{
+    background:#ffbb33;
+}
+
+.cancelled{
+    background:#ff4444;
+}
+.sidebar ul li a{
+    text-decoration:none;
+    color:white;
+    display:block;
+}
+
+.sidebar ul li a:hover{
+    color:#00c6ff;
+}
